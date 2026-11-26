@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Member GDGoC UNSRI</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<section id="login">
+  <div class="login-shell">
+    <aside class="login-art" aria-label="GDGoC UNSRI">
+      <div class="login-brand"><span class="logo flat">GC</span><b>GDGoC UNSRI</b></div>
+      <div class="login-copy">
+        <span class="login-kicker">MEMBER PORTAL</span>
+        <h2>Connect. Learn.<br><span>Grow together.</span></h2>
+        <p>Kelola kegiatan, kehadiran, pencapaian, dan komunitas dalam satu portal.</p>
+      </div>
+      <div class="login-visual" aria-hidden="true">
+        <span class="orbit orbit-one">👩🏻‍💻</span><span class="orbit orbit-two">🎨</span>
+        <span class="orbit orbit-three">💻</span><span class="orbit orbit-four">🚀</span>
+        <div class="visual-center">GC</div>
+      </div>
+      <div class="login-dots"></div>
+    </aside>
+    <form class="login-card" id="loginForm">
+      <div class="login-mobile-brand"><span class="logo flat">GC</span> GDGoC UNSRI</div>
+      <div class="login-heading"><span id="loginWelcome">Selamat datang kembali</span><h1 id="loginTitle">Masuk ke akun</h1></div>
+      <div class="member-fields">
+        <label>Email address<input type="email" name="email" placeholder="nama@email.com" aria-label="Email"></label>
+        <label>Password<div class="password-wrap"><input type="password" name="password" placeholder="Masukkan password" aria-label="Password"><span aria-hidden="true">◉</span></div></label>
+      </div>
+      <div class="admin-fields" hidden>
+        <label>Username<input type="text" name="username" placeholder="Masukkan username" aria-label="Username"></label>
+        <label>Password<div class="password-wrap"><input type="password" name="adminPassword" placeholder="Masukkan password admin" aria-label="Password Admin"><span aria-hidden="true">◉</span></div></label>
+      </div>
+      <div class="login-options"><label class="remember"><input type="checkbox"> Ingat saya</label><button type="button" class="forgot" id="forgotPassword">Lupa password?</button></div>
+      <button type="submit" class="btn primary full login-submit" id="loginSubmit">Masuk <span>→</span></button>
+      <div class="or" id="loginDivider">Atau lanjutkan sebagai</div>
+      <button type="button" class="btn plain full" id="adminLogin"><span class="admin-icon">A</span> Masuk sebagai Admin</button>
+      <small class="muted lang">Bahasa Indonesia ▾</small>
+    </form>
+  </div>
+  <p class="muted foot">© 2026 GDGoC UNSRI</p>
+</section>
+
+<div id="app" hidden>
+  <aside>
+    <div class="side-brand"><span class="logo">GC</span><div><b>GDGoC UNSRI</b><small>ADMIN PORTAL</small></div></div>
+    <nav id="nav"></nav>
+    <div class="side-user"><span class="avatar">AD</span><div><b>Admin GDGoC UNSRI</b><small>● Online</small></div></div>
+    <button id="logout" class="logout">Keluar</button>
+  </aside>
+  <main>
+    <header>
+      <div><h2 id="title"></h2><small id="subtitle" class="muted"></small></div>
+      <div class="head-right">
+        <input id="globalSearch" aria-label="Cari anggota" placeholder="Search anything...">
+        <span class="mag">🔍</span>
+        <button class="bell" data-act="notif" aria-label="Notifikasi">🔔<i>4</i></button>
+        <span class="avatar">AD</span>
+      </div>
+    </header>
+    <div id="view"></div>
+  </main>
+</div>
+
+<dialog id="modal"><form id="modalForm"></form></dialog>
+<script src="app.js"></script>
+</body>
+</html>
